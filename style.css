@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    transition: 0.3s;
+}
+:root{
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --primary-color: #4f504f;
+    --secundary-color: #313131;
+    --tertiary-color: #ffd400;
+    --blue-color: #0083ca;
+    --font-color: #f4f4f4;
+    --font-color-alt: #b1b1b1;
+    --background-alert: rgba(241, 0, 0, 0.171);
+    --red-alert: rgb(189, 8, 8);
+    --scrollbar-thumb-color: #ffd50023;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+main{
+    padding: 1rem;
+    width: 80%;
+    height: 90%;
+    background-color: var(--secundary-color);
+    border-radius: 1rem;
+}
+#title{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+#title h1{
+    color: var(--tertiary-color);
+}
+#title i{
+    font-size: 1.3rem;
+    padding: .5rem;
+    border-radius: .2rem;
+    color: var(--tertiary-color);
+}
+
+section{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#busca *{
+    font-size: 1.3rem;
+}
+#busca input{
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    border-radius: 1rem;
+    padding: .1rem .1rem .1rem 1rem;
+    outline: none;
+}
+#busca button{
+    background-color: rgba(0, 0, 0, 0);
+    color: var(--tertiary-color);
+}
+#busca button i{
+    padding: 0.3rem;
+    border-radius: 1rem;
+}
+#busca button :hover{
+    background-color: var(--blue-color);
+}
+.alerta{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--background-alert);
+    color: var(--red-alert);
+    padding: .5rem;
+    border-radius: .3rem;
+}
+#rastreio{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-encomenda-div{
+    display: flex;
+    align-items: center;
+    min-width: 33%;
+    background-color: var(--primary-color);
+    margin: .1rem;
+    border-radius: .5rem;
+}
+.indexDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secundary-color);
+    width: 25%;
+    height: 90%;
+    padding: 1rem;
+    margin: .3rem;
+    border-radius: .5rem;
+    border-left: var(--tertiary-color) 1px solid;
+    border-bottom: var(--tertiary-color) 1px solid;
+    border-right: var(--blue-color) 1px solid;
+    border-top: var(--blue-color) 1px solid;
+}
+.content{
+    width: 75%;
+}
+.dsStatusEncomenda{
+    color: var(--font-color-alt);
+    font-size: .9rem;
+    padding: .2rem;
+}
